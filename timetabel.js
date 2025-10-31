@@ -20,8 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show a success message
             alert(`Attendance code scanned: ${decodedText}`);
             
-            // **IMPORTANT**: Here you would send the `decodedText` to your backend
-            // sendAttendanceCodeToBackend(decodedText);
+             sendAttendanceCodeToBackend(decodedText);
             
         }).catch(err => {
             console.error("Error stopping the scanner", err);
@@ -187,7 +186,7 @@ const timetableData = {
             { time: "12:15 - 01:15", subject: "BEE"},
             { time: "01:15 - 02:00", subject: "Lunch", isBreak: true },
             { time: "02:00 - 03:00", subject: "EM"}, // Corrected missing comma
-            { time: "03:00 - 04:00", subject: "M-I"}, // Added a placeholder class
+            { time: "03:00 - 04:00", subject: "M-I"},
           ] 
         },
         4: 
@@ -343,9 +342,6 @@ function renderDailyTimetable() {
 }
 
 
-// =======================================================
-// === END OF DYNAMIC TIMETABLE CODE ===
-// =======================================================
 
 // --- Remaining dashboard JS starts here (Modified Initialization) ---
 
