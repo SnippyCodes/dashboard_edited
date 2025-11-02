@@ -82,10 +82,10 @@ const timetableData = {
         1: { // MONDAY
             day: "Monday",
             schedule: [
-                { time: "9:00 - 10:00", subject: "M-I" },
-                { time: "10:00 - 11:00", subject: "BEE" },
+                { time: "9:00 - 10:00", subject: "Physics" },
+                { time: "10:00 - 11:00", subject: "M-I" },
                 { time: "11:00 - 11:15", subject: "LUNCH", isBreak: true },
-                { time: "11:15 - 1:15", subject: "A1-M-I / A2-BEE / A3-PHY" },
+                { time: "11:15 - 1:15", subject: "A1-EM / A2-BEE/ A3-PHY" },
                 { time: "01:15 - 02:00", subject: "LUNCH", isBreak: true },
                 { time: "02:00 - 04:00", subject: "A1-M-I / A2-FPL / A3-PCS" },
             ]
@@ -107,7 +107,7 @@ const timetableData = {
             day: "Wednesday",
             schedule: [
                 { time: "09:00 - 10:00", subject: "EM" },
-                { time: "10:00 - 11:00", subject: "PHY" },
+                { time: "10:00 - 11:00", subject: "BEE" },
                 { time: "11:00 - 11:15", subject: "LUNCH", isBreak: true },
                 { time: "11:15 - 01:15", subject: "A1-PCS / A2-M-I / A3-FPL" },
                 { time: "01:15 - 02:00", subject: "Long Break", isBreak: true },
@@ -180,24 +180,26 @@ const timetableData = {
         3: 
         { day: "Wednesday", schedule: 
           [
-            { time: "9:00 - 11:00", subject: "B1-FPL/B2-Lib/B3-PHY" },
+            { time: "9:00 - 11:00", subject: "B1-FPL/B2-M-I/Lib/B3-PCS" },
             { time: "11:00 - 11:15", subject: "Break", isBreak: true },
             { time: "11:15 - 12:15", subject: "PHY" },
             { time: "12:15 - 01:15", subject: "BEE"},
             { time: "01:15 - 02:00", subject: "Lunch", isBreak: true },
             { time: "02:00 - 03:00", subject: "EM"}, // Corrected missing comma
-            { time: "03:00 - 04:00", subject: "M-I"},
+            { time: "03:00 - 04:00", subject: "DTIL"},
           ] 
         },
         4: 
         { day: "Thursday", schedule: 
           [
-            { time: "9:00 - 10:00", subject: "FPL" },
-            { time: "10:00 - 11:00", subject: "M-I" },
+            { time: "9:00 - 10:00", subject: "M-I" },
+            { time: "10:00 - 11:00", subject: "FPL" },
             { time: "11:00 - 11:15", subject: "Break", isBreak: true },
             { time: "11:15 - 01:15", subject: "B1-PCS/B2-FPL/B3-M-I" },
             { time: "01:15 - 02:00", subject: "Lunch", isBreak: true },
-            { time: "02:00 - 4:00", subject:"BEE"}, 
+            { time: "02:00 - 03:00", subject:"BEE"},
+            { time: "03:00 - 04:00",
+subject:"TG"}, 
           ]
         },
         5:
@@ -209,7 +211,9 @@ const timetableData = {
             { time: "11:00 - 11:15", subject: "Break", isBreak: true },
             { time: "11:15 - 01:15", subject: "B1-PHY/B2-EM/B3-BEE" },
             { time: "01:15 - 02:00", subject: "Lunch", isBreak: true },
-            { time: "02:00 - 4:00", subject:"DTIL"},
+            { time: "02:00 - 03:00", subject:"DTIL"},
+            { time: "03:00 - 04:00",
+subject:"TG"},
              ]
           },
         6:
@@ -227,8 +231,8 @@ const timetableData = {
         1: { // MONDAY
             day: "Monday",
             schedule: [
-                { time: "9:00 - 10:00", subject: "PHY" },
-                { time: "10:00 - 11:00", subject: "M-I" },
+                { time: "9:00 - 10:00", subject: "M-I" },
+                { time: "10:00 - 11:00", subject: "PHY" },
                 { time: "11:00 - 11:15", subject: "Break", isBreak: true },
                 { time: "11:15 - 01:15", subject: "C1-Lib/C2-FPL/C3-PCS" },
                 { time: "01:15 - 02:00", subject: "Lunch", isBreak: true },
@@ -266,8 +270,8 @@ const timetableData = {
           day:
             "Thursday", schedule:
             [
-              { time: "9:00 - 10:00", subject: "M-I" },
-              { time: "10:00 - 11:00", subject: "BEE" },
+              { time: "9:00 - 10:00", subject: "BEE" },
+              { time: "10:00 - 11:00", subject: "M-I" },
               { time: "11:00 - 11:15", subject: "Break", isBreak: true },
               { time: "11:15 - 01:15", subject: "C1-EM/C2-BEE/C3-PHY" },
               { time: "01:15 - 02:00", subject: "Lunch", isBreak: true },
@@ -285,7 +289,9 @@ const timetableData = {
                 { time: "11:15 - 12:15", subject: "M-I" },
                 { time: "12:15 - 01:15", subject: "DTIL" },
                 { time: "01:15 - 02:00", subject: "Lunch", isBreak: true },
-                { time: "02:00 - 3:00", subject: "TG/EXTRA" },
+                { time: "02:00 - 3:00", subject: "EG" },
+                { time: "03:00 - 04:00",
+subject:"TG"},
               ]
            },
         6: { day: "Saturday", schedule: [{ time: "All Day", subject: "CCC-I" }] },
